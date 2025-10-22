@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav> 
+                <img src="photo/0I1A9501.JPG" class="logo">          
+            
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Website developer</p>
+                <h1>Hi, I'm  <span>Muhammed</span> <br> from Ethiopia</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---about---- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo/0I1A9421.JPG" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm <strong>Muhammed Haji</strong>, a passionate and motivated <strong>Electrical and Computer Engineering graduate</strong> 
+            with a strong interest in technology, software development, and networking. 
+            I have experience in <strong>network engineering, web development, and AI-based solutions</strong>, 
+            and I enjoy building innovative projects that solve real-world problems.  
+
+            I am skilled in <strong>Python, C++, Java, HTML, CSS, JavaScript</strong> and have hands-on experience 
+            with tools like <strong>Proteus, EMU, LTSpice, and CST Studio Suite</strong>. 
+            I’m also enthusiastic about continuous learning and currently focusing on <strong>front-end web development (React & MERN stack)</strong>.  
+
+            Outside of tech, I enjoy playing football, working in teams, and contributing to community initiatives. 
+            My goal is to grow as a software and network engineer while making a meaningful impact in the tech industry.
+        </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experiance',event)">Experiance</p>
+                    <p class="tab-links" onclick="opentab('education',event~)">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>frontend</span><br>webdevlopment</li>
+                        <li><span>backend</span><br>webdevlopment</li>
+                        <li><span>networking</span><br>designing network</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experiance">
+                    <ul>
+                        <li><span>2024 - current</span><br>web devlopment freelance</li>
+                        <li><span>2025 - current</span><br>web devlopment</li>
+                        <li><span>2024 - current</span><br>designing network at ethio telecom</li>
+                        <li><span>2024 - current</span><br>Antenna designing </li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2025</span><br>Electrical and Computer Engineering at Addis Ababa university</li>
+                        <li><span>2019-2025</span><br>Electrical and Computer Engineering at Addis Ababa university</li>
+                        <li><span>2024-2025</span><br>CISCO networking at cisco academy</li>
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>web Design</h2>
+                    <p>I am web developer gradueted from addis abab university with electrical and computer engineering</p>
+                    <a href="#">learn more</a>
+                </div>
+                
+            </div>
+            <div>
+                    <h2>UI/UX Design</h2>
+                    <p>I am web developer gradueted from addis abab university with electrical and computer engineering</p>
+                    <a href="#">learn more</a>
+                </div>
+        </div>
+     </div>
+    <!-- <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>   
